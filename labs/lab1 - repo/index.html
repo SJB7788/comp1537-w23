@@ -7,12 +7,174 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Vancouver Wiki </title>
   <style>
+    * {
+      font-family: Arial;
+      margin: 0;
+    }
+    body {
+      background-color: whitesmoke;
+    }
+    #test {
+      display: flex;
+    }
+
+    #test2 {
+      margin: 10px;
+      font-size: 18px;
+    }
+
+    #test_img {
+      display: auto;
+      width: 250%;
+      margin: 0px 10px 10px 0px;
+    }
+
+    #early-history{
+      margin: 0px 0px 0px 10px;
+    }
+
+    .introduction {
+      margin: 10px 0px 50px 10px
+    }
+    .intro-p {
+      margin-top: 10px;
+        margin-bottom: 20px; 
+    }
+    .image {
+      height: auto;
+      width: 100%;
+      box-sizing: border-box;
+      border: 10px solid black;
+    }
+
+    .image_desc {
+      margin: 0px;
+      text-align: center;
+      border: 1px solid black;
+      box-sizing: border-box;
+      background-color: beige;
+    }
+    .table{
+      margin: 20px 10px 20px 10px;
+    }
+
+    .table table, th, td{
+      border: 2px solid black;
+      border-collapse: collapse;
+      padding:5px 5px 5px 5px;
+      text-align: center;
+    }
+
+    .table table{
+      width: 100%;
+    }
+
+    #table1 {
+      background-color: lightblue;
+    }
+    .list {
+      margin: 20px 10px 20px 10px
+    }
 
   </style>
 </head>
 
 <body>
   <!-- TODO: write this file -->
+  <h1 style="margin: 10px 0px 20px 10px;">Vancouver, BC</h1>
+  <section class="introduction">
+    <h3>Introduction </h3>
+    <div class="intro-p">
+      <p>
+        Vancouver is a major city in western Canada, located in the Lower Mainland region of 
+        British Columbia. As the most populous city in the province, the 2021 Canadian census recorded 662,248 people in the city, 
+        up from 631,486 in 2016. The Greater Vancouver area had a population of 2.6 million in 2021, making it the third-largest 
+        metropolitan area in Canada. Greater Vancouver, along with the Fraser Valley, comprises the Lower Mainland with a regional 
+        population of over 3 million. Vancouver has the highest population density in Canada, with over 5,700 people per square kilometre,
+        [6] and fourth highest in North America (after New York City, San Francisco, and Mexico City).
+      </p>
+    </div>
+    <div>
+      <a href="https://en.wikipedia.org/wiki/Vancouver#/media/File:Concord_Pacific_Master_Plan_Area.jpg">
+        <img class ="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Concord_Pacific_Master_Plan_Area.jpg/1920px-Concord_Pacific_Master_Plan_Area.jpg" alt="vancouver">
+      </a>
+      <p class="image_desc">
+        Area of the master plan for Yaletown that was worked on after the 86 expo by Arthur Erickson, Barry Downs, etc.
+      </p>
+    </div>
+  </section>
+  
+  <div class="table">
+    <table>
+      <tr id ='table1'>
+        <h2>Professional Teams in Vancouver</h2>
+        <p><br></p>
+        <td><b>Professional Team</b></td>
+        <td><b>League</b></td>
+        <td><b>Sport</b></td>
+        <td><b>Venue</b></td>
+        <td><b>Established</b></td>
+      </tr>
+      <tr>
+        <td>BC Lions</td>
+        <td>CFL</td>
+        <td>Football</td>
+        <td>BC Lions</td>
+        <td>1954</td>
+      </tr>
+      <tr>
+        <td>Vancouver Canucks</td>
+        <td>NHL</td>
+        <td>Ice Hockey</td>
+        <td>Rogers Arena</td>
+        <td>1970</td>
+      </tr>
+      <tr>
+        <td>Vancouver Whitecaps FC</td>
+        <td>MLS</td>
+        <td>Soccer</td>
+        <td>BC Place</td>
+        <td>2009</td>
+      </tr>
+    </table>
+  </div>
+  
+
+  <section id="early-history">
+    <h2 style="margin-bottom: 10px;">Early History</h2>
+    <div id="test">
+      <div id="test_img">
+        <a href="https://en.wikipedia.org/wiki/Vancouver#/media/File:Draft_of_Major_Matthews_map_of_Vancouver's_indigenous_place_names.tif">
+          <img class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Draft_of_Major_Matthews_map_of_Vancouver%27s_indigenous_place_names.tif/lossy-page1-1280px-Draft_of_Major_Matthews_map_of_Vancouver%27s_indigenous_place_names.tif.jpg" alt="old map">
+        </a>
+        <p class="image_desc">
+          Draft map of villages and landmarks with their Indigenous names, Burrard Inlet and English Bay, by Vancouver archivist J. S. Matthews
+        </p>
+      </div>
+    <p id="test2">
+      Archaeological records indicate that Aboriginal people were already living in the Vancouver area from 8,000 to 10,000 years ago. 
+      The city is located in the traditional and presently unceded territories of the Squamish, Musqueam, and Tsleil-Waututh (Burrard) 
+      peoples of the Coast Salish group. They had villages in various parts of present-day Vancouver, such as Stanley Park, 
+      False Creek, Kitsilano, Point Grey and near the mouth of the Fraser River The region where Vancouver is currently located was 
+      referred to in contemporary Halkomelem as Lhq’á:lets, meaning "wide at the bottom/end".
+      <br> <br>
+      Europeans became acquainted with the area of the future Vancouver when José María Narváez of Spain explored the coast of present-day 
+      Point Grey and parts of Burrard Inlet in 1791—although one author contends that Francis Drake may have visited the area in 1579
+      <br> <br>
+      The explorer and North West Company trader Simon Fraser and his crew became the first-known Europeans to set foot on the site of the 
+      present-day city. In 1808, they travelled from the east down the Fraser River, perhaps as far as Point Grey.
+    </p>
+  </div>
+</section>
+ 
+<div class="list">
+  <h2>Lists</h2>
+  <ul>
+    <li><a href="https://en.wikipedia.org/wiki/Transportation_in_Vancouver">Transportation in Vancouver</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Music_of_Vancouver">Music of Vancouver</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/List_of_museums_in_British_Columbia">List of museums in British Columbia</a></li>
+  </ul>
+</div>
 
 </body>
 
