@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+}
+
+.menu {
+    display: block;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+}
+
+.menu a{
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color:blue;
+}
+
+
+.PC img{
+    padding-top: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;   
+    margin: 0 auto;
+    width: 50%;
+    z-index: -1;
+}
+
+.cpu {
+    margin-top: 30px;
+    background-color: rgba(68, 68, 68, 0.7);
+    width: 29%;
+    float: left;
+}
+
+.motherboard {
+    margin-top: 30px;
+    background-color: rgba(68, 68, 68, 0.7);
+    width: 30%;
+    float: right;
+}
+
+.cpu-content, 
+.motherboard-content {
+    display: block;
+    margin: 10px 0 10px 0;
+    padding: 5px 10px 10px 20px;
+    color: #DEDEDE;
+}
+
+.gpu {
+    padding: 140px 0 0 0;
+    width: 100%;
+    clear: both;
+}
+
+.gpu-content {
+    background-color: rgba(68, 68, 68, 0.7);
+    display: block;
+    margin: 10px 0 10px 0;
+    color: #DEDEDE;
+    padding: 5px 20px 20px 20px;
+}
+
+.gpu img {
+    width: 40%;
+}
+
+.footer {
+    padding-top: 100px;
+    clear: both;
+}
+
+.footer p {
+    text-align: center;
+}
