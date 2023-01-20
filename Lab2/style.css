@@ -61,6 +61,7 @@ body {
 }
 
 .gpu {
+    margin-top: 600px;
     padding: 140px 0 0 0;
     width: 100%;
     clear: both;
@@ -75,7 +76,7 @@ body {
 }
 
 .gpu img {
-    width: 40%;
+    width: 20%;
 }
 
 .footer {
@@ -85,4 +86,68 @@ body {
 
 .footer p {
     text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .cpu{
+        margin-top: 60px;
+        width: 28%;
+    }
+
+    .motherboard {
+        width: 30%;
+    }
+
+    .cpu-content, 
+    .motherboard-content, 
+    .gpu-content {
+        font-size: 14px;
+    }
+
+    .cpu-content img {
+        width: 40%;
+    }
+ 
+    .motherboard-content img {
+        width: 100%;
+    }
+    
+    .gpu {
+        padding-top: 10px;
+    }    
+}
+
+@media screen and (max-width: 800px) {
+    .PC {
+        text-align: center;
+    }
+    .PC img {
+        z-index: 0;
+        padding-top: 30px;
+        width: 80%;
+        position: relative;
+    }
+
+    .cpu-content img {
+        width: 30%;
+    }
+
+    .gpu img{
+        width: 50%;
+    } 
+
+    .motherboard-content img {
+        width: 50%;
+    }
+
+    .cpu, 
+    .motherboard, 
+    .gpu {
+        float: none;
+        width: 100%;
+    }
+
+    .gpu {
+        padding-top: 10px;
+    }
 }
