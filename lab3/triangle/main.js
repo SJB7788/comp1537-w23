@@ -8,7 +8,5 @@ function drawTriangle(starAmt) {
     return triangle_star
 }
 
-const amtOfTriangle = parseFloat(prompt("How large of a triangle do you want?"))
-const promptTriangle = drawTriangle(amtOfTriangle)
-alert("Check the console")
-console.log(promptTriangle)
+
+console.log(drawTriangle(5))
