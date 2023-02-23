@@ -1,0 +1,16 @@
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.rainbow {
+    background: rgb(246,0,0);
+    background: linear-gradient(90deg, rgba(246,0,0,1) 10%, rgba(246,235,0,1) 29%, rgba(0,246,7,1) 46%, rgba(0,14,255,1) 66%, rgba(160,76,181,1) 84%, rgba(255,130,130,1) 100%);
+}
