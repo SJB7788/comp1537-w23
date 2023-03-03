@@ -1,0 +1,9 @@
+#movie-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.movie {
+    width: 25%;
+}
