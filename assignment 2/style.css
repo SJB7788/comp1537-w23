@@ -1,7 +1,13 @@
-.btn {
+button {
     background-color: beige;
 }
 
 #btn1 {
     background-color: green;
+}
+
+.gray {
+    background-color: white;
+    color: grey;
+    border: 0px;
 }
