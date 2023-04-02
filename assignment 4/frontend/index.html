@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Search/Selection</h1>
+    <div class="unicorn-name-container">
+        <h2>Search for Unicorn by Name</h2>
+        Unicorn Name<input type="text" name="name" id="uni-name"> 
+        <button class="name-btn">submit</button>
+    </div>
+    <div class="unicorn-weight-container">
+        <h2>Or, search for Unicorn by Weight</h2>
+        Unicorn weight<input type="text" name="name" id="uni-weight"> and
+        <input type="text" name="name" id="uni-name"> 
+        <button class="weight-btn">submit</button>
+    </div>
+    <div class="unicorn-food-container">
+        <h2>Or, Search for Unicorn by Fav. food</h2>
+        <p>Unicorn Food List</p>
+        Apple <input type="checkbox" name="Apple" id="uni-apple">
+        Carrot <input type="checkbox" name="Carrot" id="uni-carrot">
+        <button class="food-btn">submit</button>
+    </div>
+    <div class="unicorn-filter-container">
+        <h2>Filters/Projection</h2>
+        <p>Unicorn Food List</p>
+        Name <input type="checkbox" name="name" id="uni-filter-name">
+        Weight <input type="checkbox" name="Carrot" id="uni-filter-weight">
+        <button class="filter-btn">submit</button>
+    </div>
+    <div class="result">
+        <h1>Results</h1>
+    </div>
+</body>
+</html>
