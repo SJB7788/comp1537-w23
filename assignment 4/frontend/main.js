@@ -10,10 +10,7 @@ const setup = () => {
       },
     };
 
-    const res = await axios.post(
-      'https://frail-pantsuit-deer.cyclic.app/search',
-      query
-    );
+    const res = await axios.post('http://localhost:3000/search', query);
 
     $('.result').empty();
     $('.result').html(JSON.stringify(res.data));
