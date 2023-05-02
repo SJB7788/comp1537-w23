@@ -8,7 +8,7 @@ const cookieParser = require("cookie-parser");
 
 const Joi = require("joi");
 
-const { userModel, sessionModel } = require("./model/users");
+const {userModel, sessionModel} = require("./model/users");
 
 // userModel.find({username: 'hello'})
 // .then((user) => {
@@ -26,7 +26,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(
     session({
-        secret: '2acsjdbw - 4h2laosidhajs- 2eeasdds - 56jkoanfg4745 - 99idoasisd',
+        secret: process.env.SESSION_SECRET,
         cookie: {
             maxAge: expireTime,
         },
@@ -146,7 +146,7 @@ const authenticatedOnly = (req, res, next) => {
 const createSession = (req, res, next) => {
     const session = new sessionModel(
         {
-            session: req.headers.cookie.replace('connect.sid=', ''),
+            session: req.headers.cookie.replace('connect.sid=',''),
         }
     );
 
@@ -163,10 +163,10 @@ const createSession = (req, res, next) => {
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
-}
+  }
 
 app.use("/loggedIn", authenticatedOnly); //run the authenitcated only function to see if user is authed or not
-app.use("/loggedIn", createSession);
+app.use("/loggedIn", createSession); 
 app.get("/loggedIn", (req, res) => {
     image = ['https://cdn.britannica.com/31/122031-050-F8FCA663/Hamburger-cheeseburger.jpg', 'https://media.cnn.com/api/v1/images/stellar/prod/220428140436-04-classic-american-hamburgers.jpg?c=original', 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hamburger_%28black_bg%29.jpg/640px-Hamburger_%28black_bg%29.jpg']
     res.send(`
@@ -179,9 +179,9 @@ app.get("/loggedIn", (req, res) => {
 
 app.get("/endSession", (req, res) => {
     if (req.session.destroy()) {
-        sessionModel.deleteOne({ session: req.headers.cookie.replace('connect.sid=', '') })
-            .then(console.log('IT WORK'))
-            .catch(error => { console.log(error) });
+        sessionModel.deleteOne({ session: req.headers.cookie.replace('connect.sid=','')})
+        .then(console.log('IT WORK'))
+        .catch(error => {console.log(error)});
         res.redirect("/login");
     } else {
         res.status(500).send("Error 500");
