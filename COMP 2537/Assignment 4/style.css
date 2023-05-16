@@ -44,9 +44,11 @@ button {
   position: relative;
   width: 150px;
   height: 150px;
+  transition: 500ms ease;
 }
 
 .pokemon-image {
   width: 150px;
   position: absolute;
+  transition: 500ms ease;
 }
