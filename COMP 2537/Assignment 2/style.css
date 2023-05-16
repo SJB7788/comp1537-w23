@@ -1,0 +1,86 @@
+h1 {
+    font-family: 'Exo', sans-serif;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pokedex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-check-label {
+    font-family: 'Exo', sans-serif;
+}
+
+.pokemonCard {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(221, 221, 221);
+    align-items: center;
+    border: 1px black solid;
+    border-radius: 5%;
+    font-family: 'Exo', sans-serif;
+}
+
+.popUpCard {
+    box-shadow:0 0 0 1600px rgba(0,0,0,0.65);
+    display: none;
+    position: absolute;
+    width: 500px;
+    z-index: 2;
+    top: 25px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(228, 228, 228);
+    border: 1px black solid;
+    border-radius: 5%;
+    padding: 15px;
+    transition: ease 500ms;
+}
+
+.popUpImage {
+    width: 350px;
+}
+
+.popUpID, .popUpName {
+    font-size: 24pt;
+    margin: 0;
+}
+
+.pokemonCardPopUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.pokemon-stats {
+    width: 200px;
+}
+
+.pagination {
+    position: relative;
+}
+
+.pagBtn {
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+}
+
+.active {
+    border: 1px solid #a3a3a3;
+    background-color: rgb(202, 202, 202);
+}
